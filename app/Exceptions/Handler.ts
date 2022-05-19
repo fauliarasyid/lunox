@@ -9,7 +9,7 @@ import {
 class Handler extends ExceptionHandler {
   protected dontReport = [];
 
-  register() {
+  register(): void  {
     this.reportable(ApiException, (e) => {
       if (e.status >= 500) {
         console.log("API Error", e);
