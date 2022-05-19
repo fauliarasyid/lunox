@@ -12,7 +12,7 @@ class Handler extends ExceptionHandler {
   register() {
     this.reportable(ApiException, (e) => {
       if (e.status >= 500) {
-        console.log("API Error", e);
+        
       }
     });
 
